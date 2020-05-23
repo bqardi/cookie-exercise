@@ -5,24 +5,134 @@
     font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
-:root {
-    --theme-background: #fff;
-    --theme-text: #000;
-    --theme-link: indigo;
-    --theme-link-hover: crimson;
+body {
+    color: #111;
+    background-color: #fff;
+    position: fixed;
+    overflow-y: scroll;
 }
 
-body {
-    color: var(--theme-text);
-    background-color: var(--theme-background);
+body.js-scrollable {
+    position: unset;
 }
 
 a {
     text-decoration: none;
-    color: var(--theme-link);
+    color: #48a10c;
     transition: color 300ms;
 }
 
 a:hover {
-    color: var(--theme-link-hover);
+    color: #4fb40c;
 }
+
+img {
+    max-width: 100%;
+}
+
+.content {
+    padding: 1rem 5%;
+}
+
+.content__paragraph {
+    margin: 1rem 0;
+}
+
+
+/* #region LOCAL STORAGE */
+
+.local-storage,
+.local-storage-set {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 2rem 4rem;
+    display: none;
+}
+
+.local-storage.js-active {
+    display: block;
+}
+
+.local-storage-set.js-active {
+    display: block;
+}
+
+.local-storage__title {
+    margin-bottom: 1rem;
+}
+
+
+/* #endregion LOCAL STORAGE */
+
+
+/* #region COOKIE */
+
+.cookie-accept {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cookie-accept.js-hidden {
+    display: none;
+}
+
+.cookie-accept__inner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ecffdb;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-accept__info {
+    padding-right: 4%;
+}
+
+.cookie-accept__title {
+    color: #161616;
+}
+
+.cookie-accept__text {
+    color: #292929;
+}
+
+.cookie-accept__button {
+    min-width: 100%;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 150ms, color 150ms;
+}
+
+.cookie-accept__button-accept {
+    color: white;
+    background-color: #48a10c;
+    margin-bottom: 0.25rem;
+}
+
+.cookie-accept__button-deny {
+    color: white;
+    background-color: #af0c0c;
+}
+
+.cookie-accept__button-accept:hover {
+    color: #f6faff;
+    background-color: #4fb40c;
+}
+
+.cookie-accept__button-deny:hover {
+    color: #f6faff;
+    background-color: #c70e0e;
+}
+
+
+/* #endregion COOKIE */

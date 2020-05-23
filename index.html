@@ -13,9 +13,56 @@
     <script src="./js/index.js" defer></script>
 </head>
 
-<body>
+<body id="js-scrollable" class="js-scrollable">
+    <section id="cookie-container" class="cookie-accept js-hidden">
+        <div class="cookie-accept__inner">
+            <div class="cookie-accept__info">
+                <h2 class="cookie-accept__title">Accept cookies?</h2>
+                <p class="cookie-accept__text">For best user experience, please accept cookies by clicking "Accept"</p>
+            </div>
+            <div class="cookie-accept__buttons">
+                <button id="accept-cookie" class="cookie-accept__button cookie-accept__button-accept">Accept</button>
+                <button id="deny-cookie" class="cookie-accept__button cookie-accept__button-deny">Never</button>
+            </div>
+        </div>
+    </section>
     <div class="wrapper">
-        <h1>Cookie exercise</h1>
+        <div id="local-storage" class="local-storage">
+            <h2 class="local-storage__title">Local Storage Test</h2>
+            <button id="local-storage-button" class="cookie-accept__button cookie-accept__button-accept">Set local</button>
+        </div>
+        <div id="local-storage-set" class="local-storage-set">
+            <h2 class="local-storage__title">Local Storage set</h2>
+            <p>
+                Local storage is now set (delete at bottom of the page).
+            </p>
+        </div>
+        <img src="./images/cookie1920x1080.jpg" alt="Yummy cookie">
+        <main class="content">
+            <h1>Cookie exercise</h1>
+            <p class="content__paragraph">
+                Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Nulla repellendus, eaque atque ipsa assumenda iusto magnam laboriosam consectetur cumque corrupti sunt, saepe, error eum vero mollitia impedit aliquid voluptatibus
+                sequi. Inventore quo minima labore omnis! Aliquid distinctio voluptatem sit doloremque qui expedita mollitia temporibus fugit, in, eveniet tenetur quas repellat, repudiandae vitae consequuntur consectetur veniam nisi saepe voluptatibus
+                soluta repellendus? Ratione obcaecati sunt id sint ea quo officia nobis molestias vitae et est, animi tenetur quae esse dolor inventore iure atque dolores quod temporibus repudiandae cum asperiores? Aut delectus corrupti quo rerum, explicabo,
+                sit quae nostrum voluptas, libero ipsa voluptates.
+            </p>
+            <p class="content__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus, eaque atque ipsa assumenda iusto magnam laboriosam consectetur cumque corrupti sunt, saepe, error eum vero mollitia impedit aliquid voluptatibus sequi. Inventore quo minima labore
+                omnis! Aliquid distinctio voluptatem sit doloremque qui expedita mollitia temporibus fugit, in, eveniet tenetur quas repellat, repudiandae vitae consequuntur consectetur veniam nisi saepe voluptatibus soluta repellendus? Ratione obcaecati
+                sunt id sint ea quo officia nobis molestias vitae et est, animi tenetur quae esse dolor inventore iure atque dolores quod temporibus repudiandae cum asperiores? Aut delectus corrupti quo rerum, explicabo, sit quae nostrum voluptas, libero
+                ipsa voluptates.
+            </p>
+            <p class="content__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus, eaque atque ipsa assumenda iusto magnam laboriosam consectetur cumque corrupti sunt, saepe, error eum vero mollitia impedit aliquid voluptatibus sequi. Inventore quo minima labore
+                omnis! Aliquid distinctio voluptatem sit doloremque qui expedita mollitia temporibus fugit, in, eveniet tenetur quas repellat, repudiandae vitae consequuntur consectetur veniam nisi saepe voluptatibus soluta repellendus? Ratione obcaecati
+                sunt id sint ea quo officia nobis molestias vitae et est, animi tenetur quae esse dolor inventore iure atque dolores quod temporibus repudiandae cum asperiores? Aut delectus corrupti quo rerum, explicabo, sit quae nostrum voluptas, libero
+                ipsa voluptates.
+            </p>
+            <p>
+                <a id="delete-cookie" href="#">Delete cookie</a>
+                <a id="delete-local-storage" href="#">Delete local storage</a>
+            </p>
+        </main>
     </div>
 </body>
 
